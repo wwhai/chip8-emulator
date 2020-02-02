@@ -162,7 +162,7 @@ void Chip8::OP_NULL()
 
 void Chip8::OP_00E0()
 {
-	memset(video, 0, VIDEO_HEIGHT * VIDEO_WIDTH);
+	memset(video, 0, sizeof(video));
 }
 
 void Chip8::OP_00EE()
